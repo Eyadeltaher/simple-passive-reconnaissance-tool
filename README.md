@@ -23,7 +23,7 @@ twenty separate tools by hand.
 ## Project structure
 
 ```
-webrecon/
+simple-passive-reconnaissance-tool/
 ├── main.py                     # CLI entry point / orchestrator
 ├── requirements.txt
 ├── modules/
@@ -47,6 +47,7 @@ IP goes from `dns_lookup` into `geolocation`).
 ## Installation
 
 ```bash
+cd simple-passive-reconnaissance-tool
 pip install -r requirements.txt
 ```
 
