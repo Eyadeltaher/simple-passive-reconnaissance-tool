@@ -47,7 +47,6 @@ IP goes from `dns_lookup` into `geolocation`).
 ## Installation
 
 ```bash
-cd webrecon
 pip install -r requirements.txt
 ```
 
