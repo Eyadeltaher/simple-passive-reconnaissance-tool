@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Recon Report - hackthissite.org</title>
+<style>
+body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+       max-width: 900px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; line-height: 1.55; }
+h1 { border-bottom: 3px solid #1a1a1a; padding-bottom: 10px; }
+h2 { margin-top: 40px; border-bottom: 1px solid #ccc; padding-bottom: 6px; }
+h3 { margin-top: 24px; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
+th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: #1a1a1a; color: #fff; }
+tr:nth-child(even) { background: #f7f7f7; }
+code { background: #f0f0f0; padding: 2px 5px; border-radius: 3px; font-size: 13px; }
+blockquote { border-left: 4px solid #d97706; background: #fffbeb; margin: 12px 0; padding: 8px 16px; }
+.meta { color: #555; font-size: 14px; }
+.disclaimer { font-size: 13px; color: #666; margin-top: 40px; border-top: 1px solid #ccc; padding-top: 16px; }
+ul { margin-top: 6px; }
+</style>
+</head>
+<body>
+<h1>Reconnaissance Report: hackthissite.org</h1>
+
+<p><strong>Prepared:</strong> 2026-07-20 13:17:58</p>
+<p><strong>Target:</strong> https://www.hackthissite.org/</p>
+<p><strong>Scope:</strong> Passive / publicly available information only.</p>
+
+<hr>
+
+<h2>Executive Summary</h2>
+
+<ul>
+<li>Resolves to 5 IPv4 address(es).</li>
+<li>TLS certificate valid, 81 days remaining.</li>
+<li>Security header coverage: 50% (3 recommended header(s) missing).</li>
+</ul>
+
+<hr>
+
+<h2>1. WHOIS Information</h2>
+
+<table>
+<tr><th>Field</th><th>Value</th></tr>
+<tr><td>Registrar</td><td>Porkbun LLC</td></tr>
+<tr><td>Domain Name</td><td>hackthissite.org</td></tr>
+<tr><td>Creation Date</td><td>2003-08-10 15:01:25+00:00</td></tr>
+<tr><td>Expiration Date</td><td>2026-08-10 15:01:25+00:00</td></tr>
+<tr><td>Updated Date</td><td>2025-07-15 23:08:30+00:00</td></tr>
+<tr><td>Organization</td><td>Not available</td></tr>
+<tr><td>Country</td><td>Not available</td></tr>
+<tr><td>Status</td><td>clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited, clientTransferProhibited https://icann.org/epp#clientTransferProhibited</td></tr>
+<tr><td>Name Servers</td><td>c.ns.buddyns.com, f.ns.buddyns.com, g.ns.buddyns.com, h.ns.buddyns.com, j.ns.buddyns.com</td></tr>
+</table>
+
+<h2>2. DNS Records & IP Geolocation</h2>
+
+<table>
+<tr><th>Record Type</th><th>Value(s)</th></tr>
+<tr><td>A</td><td>137.74.187.100<br>137.74.187.101<br>137.74.187.102<br>137.74.187.103<br>137.74.187.104</td></tr>
+<tr><td>AAAA</td><td>None found</td></tr>
+<tr><td>MX</td><td>10 aspmx.l.google.com.<br>20 alt1.aspmx.l.google.com.<br>20 alt2.aspmx.l.google.com.<br>30 aspmx2.googlemail.com.<br>30 aspmx3.googlemail.com.<br>30 aspmx4.googlemail.com.<br>30 aspmx5.googlemail.com.</td></tr>
+<tr><td>NS</td><td>c.ns.buddyns.com.<br>f.ns.buddyns.com.<br>g.ns.buddyns.com.<br>h.ns.buddyns.com.<br>j.ns.buddyns.com.</td></tr>
+<tr><td>TXT</td><td>"Harica-9mEHYfxOM4FZwd9l0gG"<br>"Harica-PM9RrLqWMFZXTJCoEoK"<br>"t-verify=e3f12c9c23e2e475563590326df31a12"<br>"v=spf1 a mx ip4:137.74.187.96 ip4:137.74.187.97 ip4:137.74.187.98 a:mail.hackthissite.org include:aspmx.googlemail.com include:spf.hackmail.org -all"</td></tr>
+<tr><td>CNAME</td><td>None found</td></tr>
+</table>
+
+<h3>Geolocation</h3>
+
+<ul>
+<li><strong>IP:</strong> 137.74.187.100</li>
+<li><strong>Location:</strong> Paris, Île-de-France, France</li>
+<li><strong>ISP / Org:</strong> OVH SAS / Staff HackThisSite</li>
+<li><strong>AS:</strong> AS16276 OVH SAS</li>
+</ul>
+
+<h2>3. HTTP Response Headers</h2>
+
+<ul>
+<li><strong>Final URL:</strong> https://www.hackthissite.org/</li>
+<li><strong>Status Code:</strong> 200</li>
+</ul>
+
+<table>
+<tr><th>Header</th><th>Value</th></tr>
+<tr><td>Access-Control-Allow-Origin</td><td>*</td></tr>
+<tr><td>Cache-Control</td><td>no-store, no-cache, must-revalidate, post-check=0, pre-check=0</td></tr>
+<tr><td>Connection</td><td>Upgrade</td></tr>
+<tr><td>Content-Encoding</td><td>gzip</td></tr>
+<tr><td>Content-Language</td><td>en</td></tr>
+<tr><td>Content-Length</td><td>6431</td></tr>
+<tr><td>Content-Security-Policy</td><td>child-src 'self' hackthissite.org *.hackthissite.org htscdn.org *.htscdn.org discord.com; form-action 'self' hackthissite.org *.hackthissite.org htscdn.org *.htscdn.org; upgrade-insecure-requests; report-uri https://hackthissite.report-uri.com/r/d/csp/enforce</td></tr>
+<tr><td>Content-Type</td><td>text/html</td></tr>
+<tr><td>Date</td><td>Mon, 20 Jul 2026 10:18:02 GMT</td></tr>
+<tr><td>Expires</td><td>Thu, 19 Nov 1981 08:52:00 GMT</td></tr>
+<tr><td>Feature-Policy</td><td>fullscreen *</td></tr>
+<tr><td>NEL</td><td>{"report_to":"default","max_age":31536000,"include_subdomains":true,"success_fraction":0.0,"failure_fraction":0.1}</td></tr>
+<tr><td>Onion-Location</td><td>http://hackthisjogneh42n5o7gbzrewxee3vyu6ex37ukyvdw6jm66npakiyd.onion/</td></tr>
+<tr><td>Pragma</td><td>no-cache</td></tr>
+<tr><td>Public-Key-Pins-Report-Only</td><td>pin-sha256="YLh1dUR9y6Kja30RrAn7JKnbQG/uEtLMkBgFF2Fuihg="; pin-sha256="Vjs8r4z+80wjNcr1YKepWQboSIRi63WsWXhIMN+eWys="; max-age=2592000; includeSubDomains; report-uri="https://hackthissite.report-uri.com/r/d/hpkp/reportOnly"</td></tr>
+<tr><td>Referrer-Policy</td><td>origin-when-cross-origin</td></tr>
+<tr><td>Report-To</td><td>{"group":"default","max_age":31536000,"endpoints":[{"url":"https://hackthissite.report-uri.com/a/d/g"}],"include_subdomains":true}</td></tr>
+<tr><td>Server</td><td>HackThisSite</td></tr>
+<tr><td>Set-Cookie</td><td>HackThisSite=btvilavjue4cf1qblfpmd1m5k5; expires=Tue, 21-Jul-2026 10:18:02 GMT; path=/</td></tr>
+<tr><td>Strict-Transport-Security</td><td>max-age=31536000; includeSubDomains; preload</td></tr>
+<tr><td>Upgrade</td><td>h2,h2c</td></tr>
+<tr><td>Vary</td><td>Accept-Encoding</td></tr>
+<tr><td>X-XSS-Protection</td><td>0</td></tr>
+</table>
+
+<h2>4. SSL/TLS Certificate</h2>
+
+<table>
+<tr><th>Field</th><th>Value</th></tr>
+<tr><td>Subject (CN)</td><td>hackthisjogneh42n5o7gbzrewxee3vyu6ex37ukyvdw6jm66npakiyd.onion</td></tr>
+<tr><td>Issuer</td><td>Hellenic Academic and Research Institutions CA</td></tr>
+<tr><td>Valid From</td><td>2026-03-25T06:05:48+00:00</td></tr>
+<tr><td>Valid Until</td><td>2026-10-10T06:05:47+00:00</td></tr>
+<tr><td>Days Remaining</td><td>81</td></tr>
+<tr><td>TLS Version</td><td>TLSv1.2</td></tr>
+<tr><td>Cipher Suite</td><td>ECDHE-RSA-AES256-GCM-SHA384</td></tr>
+<tr><td>Subject Alt. Names</td><td>hackthissite.org, www.hackthissite.org, hackthisjogneh42n5o7gbzrewxee3vyu6ex37ukyvdw6jm66npakiyd.onion</td></tr>
+</table>
+
+<h2>5. robots.txt & sitemap.xml</h2>
+
+<h3>robots.txt</h3>
+<ul>
+<li><strong>Found at:</strong> https://www.hackthissite.org/robots.txt</li>
+<li><strong>Disallowed paths (2):</strong></li>
+<p>  - <code>/missions/</code></p>
+<p>  - <code>/killing/all/humans/</code></p>
+</ul>
+
+<h3>sitemap.xml</h3>
+<ul>
+<li>Not found.</li>
+</ul>
+
+<h2>6. Security Observations</h2>
+
+<p><strong>Security header coverage score: 50%</strong></p>
+
+<p><strong>Present:</strong></p>
+<ul>
+<li>Content-Security-Policy</li>
+<li>Strict-Transport-Security</li>
+<li>Referrer-Policy</li>
+</ul>
+
+<p><strong>Missing / Recommended:</strong></p>
+
+<table>
+<tr><th>Header</th><th>Why it matters</th></tr>
+<tr><td>X-Frame-Options</td><td>Prevents clickjacking by controlling whether the page can be framed.</td></tr>
+<tr><td>X-Content-Type-Options</td><td>Prevents MIME-sniffing attacks (should be 'nosniff').</td></tr>
+<tr><td>Permissions-Policy</td><td>Restricts which browser features/APIs the page may use.</td></tr>
+</table>
+
+<p><strong>Banner exposure:</strong></p>
+<ul>
+<li><code>Server: HackThisSite</code> -- Reveals server/framework version info useful for attacker fingerprinting.</li>
+</ul>
+
+<p><strong>Cookie configuration notes:</strong></p>
+<ul>
+<li>Cookie missing HttpOnly -- readable by JavaScript, raising XSS-theft risk.</li>
+<li>Cookie missing Secure -- may be sent over plain HTTP.</li>
+<li>Cookie missing SameSite -- weaker CSRF protection.</li>
+</ul>
+
+<hr>
+
+<h2>Disclaimer</h2>
+
+<p>This report was generated automatically using the Web Recon Automation Framework and reflects publicly available information at the time of collection. It is intended as a starting point for authorized security assessment work, not a complete vulnerability assessment or penetration test. All testing beyond passive information gathering requires explicit written authorization from the target's owner.</p>
+
+</body>
+</html>
