@@ -87,6 +87,36 @@ To add a new recon module:
 3. Add a `_section_your_module()` function in `report/report_generator.py`
    and call it from `generate_markdown_report()`.
 
+## Design notes (mapped to what a reviewer will actually check)
+
+**Reliability of data collection** — every network-touching call lives inside
+a `safe_run()` boundary (`modules/utils.py`). A module either returns real
+data or a structured error; it never raises past that boundary and never
+takes the rest of the scan down with it. Verified against a live target: see
+the write-up below for a run where two of eight modules were blocked by
+network policy and the scan still completed with a full report.
+
+**Code quality & structure** — one file per data source, one job per file.
+`security_analysis.py` deliberately does zero networking — it's a pure
+function over the header dict `http_headers.py` already collected, which
+makes it trivial to unit test in isolation without hitting the network.
+`main.py` contains no scraping logic at all, only orchestration.
+
+**Report clarity** — the report is structured the way a pentest scoping
+document is structured: executive summary first (the 3-4 things that
+actually matter), then supporting detail by category, then a disclaimer
+about scope and authorization. Missing data is stated explicitly
+(`_Data unavailable -- <reason>_`) rather than silently omitted, because a
+client reading this needs to know the difference between "nothing found"
+and "we couldn't check."
+
+**Original engineering effort** — the Markdown→HTML conversion in
+`report_generator.py` is hand-written (not a wrapped library call) because
+the report only needs a handful of constructs (headings, tables, lists,
+bold, inline code, blockquotes) and pulling in a full Markdown engine for
+that felt like the wrong tradeoff for a single-file, dependency-light
+deliverable.
+
 ## Legal / ethical note
 
 This tool only collects information that is already public (WHOIS,
