@@ -124,3 +124,4 @@ DNS, published HTTP responses, robots.txt, TLS certs presented to any
 client). It does not scan ports, brute-force paths, or send anything
 beyond a handful of ordinary GET requests. Even so, only point it at
 targets you own or are explicitly authorized to assess.
+
